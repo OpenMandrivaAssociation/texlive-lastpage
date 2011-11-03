@@ -1,3 +1,9 @@
+# revision 23793
+# category Package
+# catalog-ctan /macros/latex/contrib/lastpage
+# catalog-date 2011-09-01 15:02:59 +0200
+# catalog-license gpl2
+# catalog-version 1.2k
 Name:		texlive-lastpage
 Version:	1.2k
 Release:	1
@@ -50,6 +56,7 @@ says: Page N of M.
 %doc %{_texmfdistdir}/source/latex/lastpage/lastpage.drv
 %doc %{_texmfdistdir}/source/latex/lastpage/lastpage.dtx
 %doc %{_texmfdistdir}/source/latex/lastpage/lastpage.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -60,3 +67,5 @@ says: Page N of M.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
