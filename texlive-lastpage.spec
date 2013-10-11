@@ -1,12 +1,12 @@
-# revision 23793
+# revision 28985
 # category Package
 # catalog-ctan /macros/latex/contrib/lastpage
-# catalog-date 2011-09-01 15:02:59 +0200
+# catalog-date 2013-01-29 10:13:54 +0100
 # catalog-license gpl2
-# catalog-version 1.2k
+# catalog-version 1.2l
 Name:		texlive-lastpage
-Version:	1.2k
-Release:	2
+Version:	1.2l
+Release:	1
 Summary:	Reference last page for Page N of M type footers
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/lastpage
@@ -56,17 +56,3 @@ says: Page N of M.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.2k-2
-+ Revision: 753126
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.2k-1
-+ Revision: 718805
-- texlive-lastpage
-- texlive-lastpage
-- texlive-lastpage
-- texlive-lastpage
-
