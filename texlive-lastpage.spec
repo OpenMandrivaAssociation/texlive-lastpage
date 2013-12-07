@@ -6,7 +6,7 @@
 # catalog-version 1.2l
 Name:		texlive-lastpage
 Version:	1.2l
-Release:	2
+Release:	3
 Summary:	Reference last page for Page N of M type footers
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/lastpage
