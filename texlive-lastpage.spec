@@ -5,8 +5,8 @@
 # catalog-license gpl2
 # catalog-version 1.2l
 Name:		texlive-lastpage
-Version:	1.2l
-Release:	9
+Version:	1.2m
+Release:	1
 Summary:	Reference last page for Page N of M type footers
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/lastpage
