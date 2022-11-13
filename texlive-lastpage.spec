@@ -1,19 +1,13 @@
-# revision 28985
-# category Package
-# catalog-ctan /macros/latex/contrib/lastpage
-# catalog-date 2013-01-29 10:13:54 +0100
-# catalog-license gpl2
-# catalog-version 1.2l
 Name:		texlive-lastpage
-Version:	1.2m
-Release:	2
+Version:	60414
+Release:	1
 Summary:	Reference last page for Page N of M type footers
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/lastpage
 License:	GPL2
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lastpage.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lastpage.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lastpage.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lastpage.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lastpage.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lastpage.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -27,12 +21,12 @@ document. It is particularly useful in the page footer that
 says: Page N of M.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -49,7 +43,8 @@ says: Page N of M.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
