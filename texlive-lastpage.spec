@@ -1,6 +1,6 @@
 Name:		texlive-lastpage
 Version:	60414
-Release:	1
+Release:	2
 Summary:	Reference last page for Page N of M type footers
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/lastpage
