@@ -3,7 +3,7 @@ Version:	60414
 Release:	2
 Summary:	Reference last page for Page N of M type footers
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/lastpage
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/lastpage
 License:	GPL2
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lastpage.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lastpage.doc.r%{version}.tar.xz
